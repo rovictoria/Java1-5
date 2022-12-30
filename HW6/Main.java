@@ -49,7 +49,7 @@ public class Main {
     private static int createCriterion() {
         Map<Integer, String> criterion = new HashMap<Integer, String>();
         criterion.put(1, "ОЗУ");
-        criterion.put(2, "Объем ЖД");
+        criterion.put(2, "Объем Жёсткого диска");
         criterion.put(3, "Операционная система");
         criterion.put(4, "Цвет");
 
@@ -70,11 +70,11 @@ public class Main {
         } else if (selectedCriterion == 4) {
             filter4(createLaptopSet());
         } else
-            System.out.println("Введено несуществующее значение");
+            System.out.println("Введено несуществующее значение.");
     }
 
     private static void filter1(Set<Object> setLaptop) {
-        System.out.print("Введите необходимый объем ОЗУ (4, 6, 8, 16): ");
+        System.out.print("Введите необходимый объем ОЗУ (4, 8, 16): ");
         Scanner scanner1 = new Scanner(System.in);
         int size1 = scanner1.nextInt();
         String sizeRam = "ram=" + size1;
@@ -87,7 +87,7 @@ public class Main {
     }
 
     private static void filter2(Set<Object> setLaptop) {
-        System.out.print("Введите необходимый объем ЖД (150, 200, 250, 500): ");
+        System.out.print("Введите необходимый объем жёсткого диска (128, 256, 512, 1000): ");
         Scanner scanner2 = new Scanner(System.in);
         int size2 = scanner2.nextInt();
         String sizeSsd = "ssd=" + size2;
@@ -100,13 +100,13 @@ public class Main {
     }
 
     private static void filter3(Set<Object> setLaptop) {
-        System.out.println("1 - Windows 7" + "\n" + "2 - Windows 8" + "\n" + "3 - Windows 11");
+        System.out.println("1 - Mac OS" + "\n" + "2 - Windows 10" + "\n" + "3 - Windows 11");
         System.out.print("Введите выбранную ОС: ");
         Scanner scanner3 = new Scanner(System.in);
         int selectedOs = scanner3.nextInt();
         String os = null;
         if (selectedOs == 1) {
-            os = "Windows 7";
+            os = "Mac OS";
         } else if (selectedOs == 2) {
             os = "Windows 10";
         } else if (selectedOs == 3) {
