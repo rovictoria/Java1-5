@@ -114,7 +114,7 @@ public class Main {
         System.out.println("Задача 3. Отмена последней операции:");
         Deque<Integer> queue = new LinkedList<>();
         boolean flag = true;
-        while (flag = true) {
+        while (flag) {
             int num = calculator();
             queue.addLast(num);
             System.out.println(queue);
