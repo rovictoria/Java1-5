@@ -12,8 +12,11 @@ public class Main {
         Presenter a = new Presenter(new Subtraction(), new View());
         a.buttonClickSub();
 
-        Presenter v = new Presenter(new Subtraction(), new View());
-        v.buttonClick();
+        Presenter b = new Presenter(new Multiplication(), new View());
+        b.buttonClickMult();
+
+        // Presenter d = new Presenter(new Subtraction(), new View());
+        // d.buttonClick();
 
     }
 

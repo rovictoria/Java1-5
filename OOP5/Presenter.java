@@ -27,4 +27,14 @@ public class Presenter {
         int result = model.result();
         view.print(result, "Subtraction: ");
     }
+
+    public void buttonClickMult() {
+        int a = view.getValue("a: ");
+        int b = view.getValue("b: ");
+        model.setX(a);
+        model.setY(b);
+        int result = model.result();
+        view.print(result, "Multiplication: ");
+    }
+
 }
