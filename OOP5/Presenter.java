@@ -11,6 +11,7 @@ public class Presenter {
     }
 
     public void buttonClickSum() {
+        System.out.println("Сумма чисел целочисленная: ");
         int a = view.getValue("a: ");
         int b = view.getValue("b: ");
         model.setX(a);
@@ -20,6 +21,7 @@ public class Presenter {
     }
 
     public void buttonClickSub() {
+        System.out.println("Разность чисел целочисленная: ");
         int a = view.getValue("a: ");
         int b = view.getValue("b: ");
         model.setX(a);
@@ -29,6 +31,7 @@ public class Presenter {
     }
 
     public void buttonClickMult() {
+        System.out.println("Умножение чисел целочисленное: ");
         int a = view.getValue("a: ");
         int b = view.getValue("b: ");
         model.setX(a);
@@ -38,6 +41,7 @@ public class Presenter {
     }
 
     public void buttonClickDiv() {
+        System.out.println("Деление чисел целочисленное: ");
         int a = view.getValue("a: ");
         int b = view.getValue("b: ");
         model.setX(a);
