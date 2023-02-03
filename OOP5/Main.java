@@ -1,7 +1,7 @@
 package OOP5;
 
 /**
- * Написать программу сложения двух чисел
+ * Написать программу-калькулятор
  */
 public class Main {
     public static void main(String[] args) {
