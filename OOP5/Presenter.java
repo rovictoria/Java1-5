@@ -37,4 +37,13 @@ public class Presenter {
         view.print(result, "Multiplication: ");
     }
 
+    public void buttonClickDiv() {
+        int a = view.getValue("a: ");
+        int b = view.getValue("b: ");
+        model.setX(a);
+        model.setY(b);
+        int result = model.result();
+        view.print(result, "Div: ");
+    }
+
 }
