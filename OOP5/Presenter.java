@@ -10,12 +10,21 @@ public class Presenter {
         view = v;
     }
 
-    public void buttonClick() {
+    public void buttonClickSum() {
         int a = view.getValue("a: ");
         int b = view.getValue("b: ");
         model.setX(a);
         model.setY(b);
         int result = model.result();
         view.print(result, "Sum: ");
+    }
+
+    public void buttonClickSub() {
+        int a = view.getValue("a: ");
+        int b = view.getValue("b: ");
+        model.setX(a);
+        model.setY(b);
+        int result = model.result();
+        view.print(result, "Subtraction: ");
     }
 }
